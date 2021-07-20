@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>  
 
     <title>Victor Sada - Personal Portfolio</title>
     <meta content="" name="descriptison" />
@@ -119,7 +120,7 @@
             <p>
             Me encantaría poder entrar a formar parte de una empresa en la que pueda aplicar todos mis
             conocimientos y, al mismo tiempo, que me permita desarrollarme profesionalmente. <br>
-            Gracias a mi formación especializada, considero que puedo aportar valor y seguir desarrollándome profesionalmente
+            Gracias a mi formación profesional, considero que puedo aportar valor y seguir desarrollándome 
             en una compañía que coincida con mis valores y expectativas.  <br> 
             Como persona organizada y con una gran motivación, soy capaz de adaptarme a cualquier circunstancia y
             dar siempre lo mejor de mí en cualquier proyecto, al mismo tiempo que me esfuerzo por trabajar en equipo
@@ -148,7 +149,7 @@
                     </li> -->
                     <li>
                       <i class="icofont-rounded-right"></i>
-                      <strong>Edad:</strong> 25
+                      <strong>Edad:</strong> 26
                     </li>
                     <li>
                       <i class="icofont-rounded-right"></i>
@@ -279,20 +280,33 @@
                 </div>
               </div>
               <div class="progress">
-                <span class="skill">GIT <i class="val">70%</i></span>
+                <span class="skill">GIT <i class="val">45%</i></span>
                 <!-- entre las etiquetas i va el porcentaje -->
                 <div class="progress-bar-wrap">
                   <div
                     class="progress-bar"
                     role="progressbar"
-                    aria-valuenow="70"
+                    aria-valuenow="45"
                     aria-valuemin="0"
                     aria-valuemax="100"
                   ></div>
                 </div>
               </div>
               <div class="progress">
-                <span class="skill">CSS <i class="val">60%</i></span>
+                <span class="skill">CSS <i class="val">45%</i></span>
+                <div class="progress-bar-wrap">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    aria-valuenow="45"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">JavaScript <i class="val">60%</i></span>
                 <div class="progress-bar-wrap">
                   <div
                     class="progress-bar"
@@ -304,20 +318,7 @@
                 </div>
               </div>
 
-              <div class="progress">
-                <span class="skill">JavaScript <i class="val">70%</i></span>
-                <div class="progress-bar-wrap">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="70"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-
-              <div class="progress">
+              <!-- <div class="progress">
                 <span class="skill">REDUX <i class="val">60%</i></span>
                 <div class="progress-bar-wrap">
                   <div
@@ -328,17 +329,17 @@
                     aria-valuemax="100"
                   ></div>
                 </div>
-              </div>
+              </div> -->
             </div>
 
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <div class="progress">
-                <span class="skill">REACT JS <i class="val">70%</i></span>
+                <span class="skill">REACT JS <i class="val">50%</i></span>
                 <div class="progress-bar-wrap">
                   <div
                     class="progress-bar"
                     role="progressbar"
-                    aria-valuenow="70"
+                    aria-valuenow="50"
                     aria-valuemin="0"
                     aria-valuemax="100"
                   ></div>
@@ -360,12 +361,12 @@
               </div>
 
               <div class="progress">
-                <span class="skill">MONGO DB <i class="val">55%</i></span>
+                <span class="skill">MONGO DB <i class="val">75%</i></span>
                 <div class="progress-bar-wrap">
                   <div
                     class="progress-bar"
                     role="progressbar"
-                    aria-valuenow="55"
+                    aria-valuenow="75"
                     aria-valuemin="0"
                     aria-valuemax="100"
                   ></div>
@@ -505,9 +506,9 @@
         <div class="container">
           <div class="section-title">
             <h2>Portafolio</h2>
-            <!-- <p>
+             <!-- <p>
               Texto previo al portafolio..
-            </p> -->
+            </p>  -->
           </div>
 
           <!-- <div class="row" data-aos="fade-up">
@@ -959,6 +960,7 @@
       <!-- ======= Contact Section ======= -->
       <!--   -->
       <!-- End Contact Section -->
+      
     </main>
     <!-- End #main -->
 
@@ -996,5 +998,74 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+      <!-- Contact Section -->
+      <div class="row">
+        <div class="col-md-5"></div>
+        <div class="col-md-4 m-2">
+      
+          <!-- PLANTILLA DE FORMULARIO DE CONTACTO -->
+          <!-- URL: https://mdbootstrap.com/docs/b4/jquery/forms/contact/ -->
+<!--Section: Contact v.2-->
+<section class="mb-4">
+
+  <!--Section heading-->
+  <h2 class="h1-responsive font-weight-bold text-center my-4">Contacto</h2>
+  <!--Section description-->
+  <p class="text-center w-responsive mx-auto mb-5">
+
+  </p>
+
+  <div class="row">
+
+      <!--Grid column-->
+      <div class="col-md-9 mb-md-0 mb-5 ml-5">
+        <form action="https://formcarry.com/s/fE5Nknwy9tG" method="POST" accept-charset="UTF-8" >
+          <label for="email">Email</label>
+          <input class="form-control" type="email" name="email" placeholder="Your email" required>
+          <br>
+          <label for="name">Name</label>
+          <input class="form-control" type="text" name="name" placeholder="Your name" required>
+          <br>
+          <label for="message">Mensaje</label>
+          <textarea name="anotherInput" class="form-control" placeholder="Coloca tu mensaje..." ></textarea>
+          <div class="text-center text-md-left">
+             <button class="btn btn-info btn-block mt-3" type="submit">Enviar</button>
+          </div>
+        
+        </form>
+
+        
+        
+          <div class="status"></div>
+      </div>
+
+
+      <!--Grid column-->
+
+      <!-- Grid column-->
+      <!-- <div class="col-md-3 text-center">
+          <ul class="list-unstyled mb-0">
+              <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                  <p>San Francisco, CA 94126, USA</p>
+              </li>
+
+              <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                  <p>+ 01 234 567 89</p>
+              </li>
+
+              <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                  <p>contact@mdbootstrap.com</p>
+              </li>
+          </ul>
+      </div> -->
+      <!--Grid column -->
+  </div>
+</section>
+<!--Section: Contact v.2-->
+          <!-- FIN DE PLANTILLA DE FORMULARIO DE CONTACTO -->
+        
+        </div>
+      </div>
+      <!-- End Contact Section -->
   </body>
 </html>
